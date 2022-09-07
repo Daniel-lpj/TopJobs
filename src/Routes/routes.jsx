@@ -1,12 +1,12 @@
 import React from "react";
-import Termometro from "../Pages/Termometro";
 import { Route, Routes as CustomRoutes } from "react-router-dom";
+import Home from "../Pages/Home";
+import Sobre from "../Pages/Sobre";
 
 const Routes = () => (
   <CustomRoutes>
-    <Route path="/" element={<Termometro />}>
-      {/* <Route path="/" element={<Footer />} /> */}
-    </Route>
+    <Route path="/" element={<Home />} />
+    <Route path="/sobre" element={<Sobre />} />
   </CustomRoutes>
 );
 
