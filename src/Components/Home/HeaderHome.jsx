@@ -1,7 +1,7 @@
 import React from "react";
-import { StyledLink, StyledHeader, Text, Menu } from "./style";
+import { StyledLink, StyledHeader, Text, Title, Menu } from "./style";
 
-const Header = () => {
+const HeaderHome = () => {
   return (
     <StyledHeader>
       <Text>Grupo 5 - FIAP</Text>
@@ -12,8 +12,9 @@ const Header = () => {
         <StyledLink to="/vagas">Vagas</StyledLink>
         <StyledLink to="/termometro">Termômetro</StyledLink>
       </Menu>
+      <Title>Seja bem vindo!</Title>
     </StyledHeader>
   );
 };
 
-export default Header;
+export default HeaderHome;
