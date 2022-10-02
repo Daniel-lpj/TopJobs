@@ -8,8 +8,8 @@ import Vagas from "../Pages/Vagas";
 
 const Routes = () => (
   <CustomRoutes>
-    <Route path="/" element={<Home />} />
-    <Route path="/login" element={<Login />} />
+    <Route path="/" element={<Login />} />
+    <Route path="/home" element={<Home />} />
     <Route path="/sobre" element={<Sobre />} />
     <Route path="/vagas" element={<Vagas />} />
     <Route path="/termometro" element={<Termometro />} />

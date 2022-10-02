@@ -19,7 +19,7 @@ const Login = () => {
   });
 
   const onSubmit = (data) => {
-    navigate("/");
+    navigate("/home");
     console.log(data);
   };
 

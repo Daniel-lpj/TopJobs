@@ -6,8 +6,8 @@ const HeaderHome = () => {
     <StyledHeader>
       <Text>Grupo 5 - FIAP</Text>
       <Menu>
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="/login">Login</StyledLink>
+        <StyledLink to="/home">Home</StyledLink>
+        <StyledLink to="/">Login</StyledLink>
         <StyledLink to="/sobre">Sobre</StyledLink>
         <StyledLink to="/vagas">Vagas</StyledLink>
         <StyledLink to="/termometro">Termômetro</StyledLink>
