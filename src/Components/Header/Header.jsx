@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledLink, StyledHeader, Text, Menu, Title, Subtitle } from "./style";
+import { StyledLink, StyledHeader, Text, Menu, Title } from "./style";
 
 const Header = () => {
   return (
@@ -12,11 +12,7 @@ const Header = () => {
         <StyledLink to="/vagas">Vagas</StyledLink>
         <StyledLink to="/termometro">Termômetro</StyledLink>
       </Menu>
-      <Title>Protótipo do Site</Title>
-      <Subtitle>
-        Este site possui o objetivo de realizar uma visão macro do nosso projeto
-        junto com uma breve descrição de cada página e seu conteúdo.
-      </Subtitle>
+      <Title>InfoJobs</Title>
     </StyledHeader>
   );
 };
