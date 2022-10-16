@@ -16,42 +16,51 @@ import {
 const Login = () => {
   const navigate = useNavigate();
 
-  const [nome, setNome] = useState();
-  const [senha, setSenha] = useState();
+  const [nome, setNome] = useState("");
+  const [senha, setSenha] = useState("");
 
-  const model = () => {
-    const log = {
-      nome: nome,
-      senha: senha,
-    };
-    return log;
-  };
-
-  const handleLogin = () => {
+  const handleLogin = (e) => {
     (async () => {
+      e.preventDefault();
       try {
-        await api.post(`/login`, model);
+        await api
+          .post(`/login`, {
+            nome: nome,
+            senha: senha,
+          })
+          .then((result) => {
+            if (result.status === 201) {
+              navigate("/home");
+            }
+          });
       } catch {
         console.log("Error");
       }
     })();
-    navigate("/home");
   };
 
   return (
     <>
       <Header />
       <Container>
-        <Formulario onSubmit={() => handleLogin()}>
+        <Formulario onSubmit={(e) => handleLogin(e)}>
           <Label>
             Nome:
-            <Input name="nome" onChange={(e) => setNome(e.target.value)} />
+            <Input
+              name="nome"
+              required
+              onChange={(e) => setNome(e.target.value)}
+            />
           </Label>
           <Label>
             Senha:
-            <Input name="senha" onChange={(e) => setSenha(e.target.value)} />
+            <Input
+              name="senha"
+              required
+              onChange={(e) => setSenha(e.target.value)}
+            />
           </Label>
-          <InputButton type="submit"></InputButton>
+          <InputButton type="submit" />
         </Formulario>
       </Container>
       <Footer />
