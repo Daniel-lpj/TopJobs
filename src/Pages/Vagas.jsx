@@ -4,7 +4,8 @@ import Header from "../Components/Header/Header";
 import {
   Card,
   Container,
-  Container2,
+  ContainerCard,
+  ContainerIcon,
   Conteudo,
   Formulario,
   Imagem,
@@ -19,6 +20,7 @@ import { api } from "../Service/api";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRemove } from "@fortawesome/free-solid-svg-icons";
+import { faThermometer0 } from "@fortawesome/free-solid-svg-icons";
 
 const Vagas = () => {
   const [listVaga, setListVaga] = useState([]);
@@ -90,7 +92,7 @@ const Vagas = () => {
         <Card>
           <Imagem src={ImagemEmpresa1} alt="Imagem da empresa" />
           <Conteudo>
-            <Container2>
+            <ContainerCard>
               <Formulario onSubmit={(e) => handleCadastrar(e)}>
                 <Label>
                   Título:
@@ -110,7 +112,7 @@ const Vagas = () => {
                 </Label>
                 <InputButton type="submit" />
               </Formulario>
-            </Container2>
+            </ContainerCard>
           </Conteudo>
         </Card>
         {listVaga.map((vaga, i) => (
@@ -126,12 +128,21 @@ const Vagas = () => {
                   Clique para acompanhar sua candidatura
                 </Link>
               </h5>
-              <FontAwesomeIcon
-                size="lg"
-                cursor="pointer"
-                icon={faRemove}
-                onClick={() => handleExcluir(vaga.codigo)}
-              />
+              <ContainerIcon>
+                <Link to={`/termometro/${vaga.codigo}`}>
+                  <FontAwesomeIcon
+                    size="lg"
+                    cursor="pointer"
+                    icon={faThermometer0}
+                  />
+                </Link>
+                <FontAwesomeIcon
+                  size="lg"
+                  cursor="pointer"
+                  icon={faRemove}
+                  onClick={() => handleExcluir(vaga.codigo)}
+                />
+              </ContainerIcon>
             </Conteudo>
           </Card>
         ))}

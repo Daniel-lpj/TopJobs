@@ -53,7 +53,7 @@ export const Conteudo = styled.div`
   }
 `;
 
-export const Container2 = styled.div`
+export const ContainerCard = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -83,4 +83,14 @@ export const InputButton = styled.input`
   justify-content: center;
   margin-bottom: 1.25em;
   padding: 0.5em 1.5625em;
+`;
+
+export const ContainerIcon = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  a {
+    padding-right: 24px;
+  }
 `;

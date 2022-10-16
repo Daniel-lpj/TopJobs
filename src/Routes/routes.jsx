@@ -11,7 +11,9 @@ const Routes = () => (
     <Route path="/" element={<Login />} />
     <Route path="/home" element={<Home />} />
     <Route path="/sobre/:id" element={<Sobre />} />
+    <Route path="/sobre" element={<Sobre />} />
     <Route path="/vagas" element={<Vagas />} />
+    <Route path="/termometro/:id" element={<Termometro />} />
     <Route path="/termometro" element={<Termometro />} />
   </CustomRoutes>
 );

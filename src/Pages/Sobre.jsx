@@ -23,7 +23,10 @@ const Sobre = () => {
   }, [id]);
 
   const titulo = vaga?.titulo;
-  const descricao = vaga?.descricao;
+  const descricao =
+    vaga?.descricao === undefined
+      ? "Por favor selecione uma vaga no menu de Vagas"
+      : vaga?.descricao;
   const alt = "Imagem sobre";
 
   return (

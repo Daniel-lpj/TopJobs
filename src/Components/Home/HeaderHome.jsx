@@ -9,6 +9,7 @@ const HeaderHome = () => {
         <StyledLink to="/home">Home</StyledLink>
         <StyledLink to="/">Login</StyledLink>
         <StyledLink to="/vagas">Vagas</StyledLink>
+        <StyledLink to="/sobre">Sobre</StyledLink>
         <StyledLink to="/termometro">Termômetro</StyledLink>
       </Menu>
       <Title>Seja bem vindo!</Title>
