@@ -12,7 +12,7 @@ const Header = () => {
         <StyledLink to="/sobre">Sobre</StyledLink>
         <StyledLink to="/termometro">Termômetro</StyledLink>
       </Menu>
-      <Title>InfoJobs</Title>
+      <Title>TopJobs</Title>
     </StyledHeader>
   );
 };

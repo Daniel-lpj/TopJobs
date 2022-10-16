@@ -12,7 +12,7 @@ const HeaderHome = () => {
         <StyledLink to="/sobre">Sobre</StyledLink>
         <StyledLink to="/termometro">Termômetro</StyledLink>
       </Menu>
-      <Title>Seja bem vindo!</Title>
+      <Title>Seja bem vindo(a)!</Title>
     </StyledHeader>
   );
 };
