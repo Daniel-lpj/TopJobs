@@ -8,7 +8,6 @@ const HeaderHome = () => {
       <Menu>
         <StyledLink to="/home">Home</StyledLink>
         <StyledLink to="/">Login</StyledLink>
-        <StyledLink to="/sobre">Sobre</StyledLink>
         <StyledLink to="/vagas">Vagas</StyledLink>
         <StyledLink to="/termometro">Termômetro</StyledLink>
       </Menu>

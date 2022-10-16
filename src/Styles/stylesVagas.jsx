@@ -7,9 +7,10 @@ export const Titulo = styled.h1`
 
 export const Container = styled.div`
   font-family: "Courier New", Courier, monospace;
-  width: 96%;
+  width: 115%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   padding-left: 2em;
   padding-bottom: 3em;
@@ -18,6 +19,7 @@ export const Container = styled.div`
 `;
 
 export const Card = styled.div`
+  width: 20%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
@@ -27,6 +29,7 @@ export const Card = styled.div`
   }
 
   margin-right: 1em;
+  margin-bottom: 1em;
 `;
 
 export const Imagem = styled.img`
